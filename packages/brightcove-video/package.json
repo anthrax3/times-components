@@ -3,24 +3,16 @@
   "version": "1.10.17",
   "main": "brightcove-video",
   "scripts": {
+    "test:all": "yarn test:android --ci --bail --coverage && yarn test:ios --ci --bail --coverage && yarn test:web --ci --bail --coverage",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
+    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
     "dextrose-stories": "dextrose generate-stories $(pwd)",
     "dextrose-clean": "dextrose clean-stories $(pwd)"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "coverageDirectory": "<rootDir>/packages/brightcove-video/coverage/",
-    "testEnvironment": "jsdom",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/brightcove-video/__tests__/*.test.js"
-    ]
   },
   "repository": {
     "type": "git",

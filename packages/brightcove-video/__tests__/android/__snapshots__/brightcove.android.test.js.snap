@@ -1,6 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders poster correctly before launch 1`] = `
+exports[`Brightcove tests on android brightcove-player Android component will go fullscreen if it receives an 'onChange' event with 'isFullscreen' equal to true 1`] = `
+<RNTBrightcove
+  accountId="[ACCOUNT_ID]"
+  autoplay={false}
+  hideFullScreenButton={false}
+  onChange={[Function]}
+  onIOSError={[Function]}
+  onLoadingError={[Function]}
+  policyKey="[POLICY_KEY]"
+  style={
+    Object {
+      "height": "100%",
+      "position": "absolute",
+      "width": "100%",
+      "zIndex": 9999,
+    }
+  }
+  videoId="[VIDEO_ID]"
+/>
+`;
+
+exports[`Brightcove tests on android brightcove-player native component renders correctly 1`] = `
+<RNTBrightcove
+  accountId="[ACCOUNT_ID]"
+  autoplay={false}
+  hideFullScreenButton={false}
+  onChange={[Function]}
+  onIOSError={[Function]}
+  onLoadingError={[Function]}
+  policyKey="[POLICY_KEY]"
+  style={
+    Object {
+      "height": 180,
+      "position": "relative",
+      "width": 320,
+      "zIndex": 0,
+    }
+  }
+  videoId="[VIDEO_ID]"
+/>
+`;
+
+exports[`Brightcove tests on android renders poster correctly before launch 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -86,7 +128,7 @@ exports[`renders poster correctly before launch 1`] = `
 </View>
 `;
 
-exports[`renders poster with custom play icon if specified 1`] = `
+exports[`Brightcove tests on android renders poster with custom play icon if specified 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -157,7 +199,7 @@ exports[`renders poster with custom play icon if specified 1`] = `
 </View>
 `;
 
-exports[`the player can trigger errors 1`] = `
+exports[`Brightcove tests on android the player can trigger errors 1`] = `
 <View
   accessibilityLabel="error-component"
   testID="error-component"
@@ -311,7 +353,7 @@ exports[`the player can trigger errors 1`] = `
 </View>
 `;
 
-exports[`will handle an error properly 1`] = `
+exports[`Brightcove tests on android will handle an error properly 1`] = `
 <View
   accessibilityLabel="error-component"
   testID="error-component"
@@ -465,7 +507,7 @@ exports[`will handle an error properly 1`] = `
 </View>
 `;
 
-exports[`will launch if play is called 1`] = `
+exports[`Brightcove tests on android will launch if play is called 1`] = `
 <RNTBrightcove
   accountId="[ACCOUNT_ID]"
   autoplay={true}
@@ -486,7 +528,7 @@ exports[`will launch if play is called 1`] = `
 />
 `;
 
-exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
+exports[`Brightcove tests on android will reset if 'resetOnFinish' is true & video finishes 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
@@ -572,7 +614,7 @@ exports[`will reset if 'resetOnFinish' is true & video finishes 1`] = `
 </View>
 `;
 
-exports[`will reset properly 1`] = `
+exports[`Brightcove tests on android will reset properly 1`] = `
 <View
   accessibilityComponentType={undefined}
   accessibilityLabel={undefined}
