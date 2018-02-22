@@ -2,7 +2,7 @@
   "name": "storybooknative",
   "displayName": "storybooknative",
   "expo": {
-    "name": "storybooknative",
+    "name": "Times-Components",
     "description": "A complete list of all of The Times components brought to you by the Times Tooling Team 🔥",
     "slug": "times-components",
     "privacy": "public",
