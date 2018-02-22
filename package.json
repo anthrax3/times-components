@@ -105,7 +105,7 @@
     "@storybook/addons": "3.3.11",
     "@storybook/react": "3.3.11",
     "@storybook/react-native": "3.3.11",
-    "@times-components/fructose": "3.1.14",
+    "@times-components/fructose": "git://github.com/newsuk/fructose.git",
     "babel-core": "6.26.0",
     "babel-plugin-flow-react-proptypes": "14.0.3",
     "babel-plugin-transform-class": "0.3.0",
@@ -145,8 +145,8 @@
     "webpack": "3.3.0"
   },
   "dependencies": {
-    "expo": "25.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "expo": "23.0.0",
+    "react-native": "0.50.1",
     "babel-preset-env": "1.6.1",
     "babel-preset-stage-2": "6.24.1"
   },
