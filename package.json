@@ -105,7 +105,7 @@
     "@storybook/addons": "3.3.11",
     "@storybook/react": "3.3.11",
     "@storybook/react-native": "3.3.11",
-    "@times-components/fructose": "git://github.com/newsuk/fructose.git",
+    "@times-components/fructose": "3.2.0",
     "babel-core": "6.26.0",
     "babel-plugin-flow-react-proptypes": "14.0.3",
     "babel-plugin-transform-class": "0.3.0",
