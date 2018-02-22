@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import Image from "@times-components/image";
-import { Animations } from "@times-components/styleguide";
 import Loading from "./card-loading";
 import {
   ImageContainer,
@@ -48,12 +47,10 @@ class CardComponent extends React.Component {
       ) : null;
 
     return (
-      <Animations.FadeIn>
-        <CardContainer>
-          {showImage ? imageComponent : null}
-          <SummaryContainer>{children}</SummaryContainer>
-        </CardContainer>
-      </Animations.FadeIn>
+      <CardContainer>
+        {showImage ? imageComponent : null}
+        <SummaryContainer>{children}</SummaryContainer>
+      </CardContainer>
     );
   }
 }
