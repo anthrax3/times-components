@@ -29,7 +29,7 @@ class MockedProvider extends Component {
   constructor(props, context) {
     super(props, context);
 
-    this.client = new ApolloClient({
+    this.client = props.client || new ApolloClient({
       link: new MockLink(props.mocks),
       cache: new Cache({ addTypename: !props.removeTypename, fragmentMatcher })
     });
@@ -61,13 +61,14 @@ MockedProvider.propTypes = {
       delay: PropTypes.number,
       newData: PropTypes.func
     })
-  ).isRequired,
+  ),
   children: PropTypes.node.isRequired,
   removeTypename: PropTypes.bool
 };
 
 MockedProvider.defaultProps = {
-  removeTypename: false
+  removeTypename: false,
+  mocks: []
 };
 
 export { MockedProvider };

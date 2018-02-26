@@ -59,7 +59,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-native": "0.53.3",
-    "react-native-web": "0.3.2",
+    "react-native-web": "0.5.1",
     "react-test-renderer": "16.2.0"
   },
   "dependencies": {
@@ -71,7 +71,7 @@
     "@times-components/styleguide": "0.3.2",
     "@times-components/tracking": "0.7.7",
     "prop-types": "15.6.0",
-    "styled-components": "2.2.3",
+    "styled-components": "3.1.6",
     "svgs": "3.2.1"
   },
   "peerDependencies": {
