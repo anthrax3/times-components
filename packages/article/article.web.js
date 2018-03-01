@@ -8,6 +8,7 @@ import ArticleLoading from "./article-loading";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleBody from "./article-body/article-body";
+import RelatedArticles from "./related-articles/related-articles";
 import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
 
@@ -34,7 +35,9 @@ class ArticlePage extends React.Component {
       publishedTime,
       publicationName,
       leadAsset,
-      content
+      content,
+      relatedArticles,
+      relatedArticlesLayout
     } = articleData;
 
     return (
@@ -66,6 +69,11 @@ class ArticlePage extends React.Component {
             </BodyContainer>
           </View>
         </MainContainer>
+        <RelatedArticles
+          articles={relatedArticles}
+          template={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
       </Fragment>
     );
   }

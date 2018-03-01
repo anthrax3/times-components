@@ -18,7 +18,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
     headline,
     publishedTime,
     section,
-    summary,
+    summary100,
     url
   } = article;
 
@@ -44,7 +44,7 @@ const RelatedArticleItem = ({ article, onPress }) => {
             title: label,
             color: colours.section[section] || colours.section.default
           }}
-          content={() => <ArticleSummaryContent ast={summary} />}
+          content={() => <ArticleSummaryContent ast={summary100} />}
         />
       </View>
     </Link>

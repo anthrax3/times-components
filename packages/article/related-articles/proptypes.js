@@ -7,7 +7,7 @@ export const relatedArticleItemPropTypes = {
     headline: PropTypes.string.isRequired,
     label: PropTypes.string,
     publishedTime: PropTypes.string.isRequired,
-    summary: PropTypes.arrayOf(treePropType).isRequired,
+    summary100: PropTypes.arrayOf(treePropType).isRequired,
     url: PropTypes.string
   }).isRequired,
   onPress: PropTypes.func.isRequired

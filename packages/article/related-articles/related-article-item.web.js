@@ -24,7 +24,7 @@ const RelatedArticleItem = ({
     headline,
     publishedTime,
     section,
-    summary,
+    summary100,
     url
   } = article;
 
@@ -61,7 +61,7 @@ const RelatedArticleItem = ({
               title: label,
               color: colours.section[section] || colours.section.default
             }}
-            content={() => <ArticleSummaryContent ast={summary} />}
+            content={() => <ArticleSummaryContent ast={summary100} />}
           />
         </StyledSummaryContainer>
       </StyledRelatedArticleContainer>

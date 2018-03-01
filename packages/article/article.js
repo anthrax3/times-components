@@ -13,6 +13,7 @@ import styles from "./styles/article-body";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
+import RelatedArticles from "./related-articles/related-articles";
 
 import articleTrackingContext from "./article-tracking-context";
 

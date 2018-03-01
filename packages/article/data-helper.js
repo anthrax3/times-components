@@ -11,11 +11,16 @@ const prepareDataForListView = articleData => {
     publishedTime: articleData.publishedTime,
     byline: articleData.byline
   };
+  const relatedArticlesData = {
+    relatedArticles: articleData.relatedArticles,
+    relatedArticlesLayout: articleData.relatedArticlesLayout
+  };
 
   const data = [
     { type: "leadAsset", data: leadAssetData },
     { type: "header", data: articleHeaderData },
-    { type: "middleContainer", data: articleMidContainerData }
+    { type: "middleContainer", data: articleMidContainerData },
+    { type: "relatedArticles", data: relatedArticlesData }
   ].concat(
     articleData.content.map((i, index) => ({
       type: "articleBodyRow",
