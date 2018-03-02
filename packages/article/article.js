@@ -55,6 +55,15 @@ class ArticlePage extends React.Component {
       );
     } else if (rowData.type === "articleBodyRow") {
       return <ArticleRow content={rowData} />;
+    } else if (rowData.type === "relatedArticles") {
+      const { relatedArticles, relatedArticlesLayout } = rowData.data;
+      return (
+        <RelatedArticles
+          articles={relatedArticles}
+          relatedArticlesTemplate={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
+      );
     }
 
     return null;

@@ -19,15 +19,14 @@ const prepareDataForListView = articleData => {
   const data = [
     { type: "leadAsset", data: leadAssetData },
     { type: "header", data: articleHeaderData },
-    { type: "middleContainer", data: articleMidContainerData },
-    { type: "relatedArticles", data: relatedArticlesData }
+    { type: "middleContainer", data: articleMidContainerData }
   ].concat(
     articleData.content.map((i, index) => ({
       type: "articleBodyRow",
       data: i,
       index
     }))
-  );
+  ).concat([{ type: "relatedArticles", data: relatedArticlesData }]);
 
   if (!leadAssetData) {
     data.splice(0, 1);
