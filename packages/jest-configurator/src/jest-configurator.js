@@ -59,8 +59,8 @@ export default (
     preset: "react-native",
     ...platformCode(platform),
     rootDir,
-    transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|my-project|react-native-button)/)"
     ],
     coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(
@@ -75,8 +75,7 @@ export default (
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupFiles: [
-      path.resolve(__dirname, "../setup-jest.js"),
-      "jest-plugin-context/setup"
+      path.resolve(__dirname, "./setup-jest.js")
     ]
   };
 };

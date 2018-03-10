@@ -1,8 +1,9 @@
 {
   "name": "@times-components/image",
   "version": "1.14.0",
-  "main": "image",
+  "main": "src/image",
   "scripts": {
+    "build": "babel src --out-dir dist",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
@@ -57,8 +58,8 @@
     "svgs": "3.2.1"
   },
   "peerDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-env": "7.0.0-beta.3",
+    "babel-preset-stage-2": "7.0.0-beta.3",
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.50",

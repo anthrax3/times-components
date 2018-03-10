@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import Card from "../../card";
+import Card from "../../dist/card";
 
 const cardProps = {
   childRatio: 2.7,

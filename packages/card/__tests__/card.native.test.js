@@ -1,7 +1,7 @@
 import { Dimensions, Text } from "react-native";
 import React from "react";
 import renderer from "react-test-renderer";
-import Card from "../card";
+import Card from "../dist/card";
 
 const cardProps = {
   childRatio: 2.7,

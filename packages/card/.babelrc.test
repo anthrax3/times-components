@@ -1,0 +1,10 @@
+{
+  "presets": ["env", "react", "stage-2", "flow"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@times-components/image": "@times-components/image/dist/image"
+      }
+    }]
+  ]
+}
