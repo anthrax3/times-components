@@ -1,3 +1,13 @@
 {
-  "presets": ["env", "react", "stage-2"]
+  "presets": ["env", "react", "stage-2", "flow"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@times-components/gradient": "@times-components/gradient/lib/gradient",
+        "@times-components/image": "@times-components/image/lib/image",
+        "@times-components/responsive-styles": "@times-components/responsive-styles/lib/responsive-styles",
+        "@times-components/styleguide": "@times-components/styleguide/lib/styleguide"
+      }
+    }]
+  ]
 }

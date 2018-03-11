@@ -2,8 +2,9 @@
   "name": "@times-components/styleguide",
   "version": "0.4.0",
   "description": "Centralised library for common styles throughout the Times",
-  "main": "styleguide",
+  "main": "src/styleguide",
   "scripts": {
+    "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && npm run prettier:diff",
@@ -32,6 +33,12 @@
   "devDependencies": {
     "@storybook/react-native": "3.3.14",
     "@times-components/jest-configurator": "0.2.1",
+    "babel-cli": "6.26.0",
+    "babel-plugin-module-resolver": "3.1.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
     "eslint": "4.9.0",
     "jest": "21.2.1",
     "prettier": "1.8.2",

@@ -59,9 +59,12 @@ export default (
     preset: "react-native",
     ...platformCode(platform),
     rootDir,
-    transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-linear-gradient|@times-components)/)"
-    ],
+    transform: {
+      "__tests__": "babel-jest",
+      "__mocks__": "babel-jest",
+      "react-native/Libraries": "babel-jest",
+      "react-native/local-cli/bundle": "babel-jest"
+    },
     coverageDirectory: `${module}/coverage/${platformPath}`,
     collectCoverageFrom: getCoveragePaths(
       rootDir,
@@ -75,7 +78,7 @@ export default (
     ],
     snapshotSerializers: ["enzyme-to-json/serializer"],
     setupFiles: [
-      path.resolve(__dirname, "../setup-jest.js"),
+      path.resolve(__dirname, "./setup-jest.js"),
       "jest-plugin-context/setup"
     ]
   };

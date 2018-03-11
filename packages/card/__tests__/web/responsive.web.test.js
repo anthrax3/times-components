@@ -6,7 +6,7 @@ import {
   CardContainer,
   ImageContainer,
   getChildContainer
-} from "../../styles/responsive";
+} from "../../lib/styles/responsive";
 
 describe("Card tests on web", () => {
   context("responsive shared components", () => {
