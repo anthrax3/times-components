@@ -3,6 +3,7 @@
   "version": "0.6.0",
   "description": "Renders a gradient background",
   "main": "src/gradient",
+  "lib": "lib/gradient",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",

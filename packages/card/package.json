@@ -2,8 +2,10 @@
   "name": "@times-components/card",
   "version": "0.21.1",
   "main": "src/card",
+  "lib": "lib/card",
   "scripts": {
-    "build": "babel src -d lib",
+    "bundle": "NODE_ENV=production rollup -c",
+    "build": "NODE_ENV=test babel src -d lib",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
@@ -37,6 +39,7 @@
     "@times-components/storybook": "0.4.2",
     "babel-cli": "6.26.0",
     "babel-plugin-module-resolver": "3.1.0",
+    "babel-plugin-react-native-web": "0.5.2",
     "babel-preset-env": "1.6.1",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",
@@ -51,7 +54,11 @@
     "react-dom": "16.2.0",
     "react-native": "0.53.3",
     "react-native-web": "0.3.2",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "rollup": "0.56.5",
+    "rollup-plugin-babel": "3.0.3",
+    "rollup-plugin-commonjs": "9.0.0",
+    "rollup-plugin-node-resolve": "3.2.0"
   },
   "dependencies": {
     "@times-components/gradient": "0.6.0",

@@ -3,6 +3,7 @@
   "version": "0.4.2",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
   "main": "src/responsive-styles",
+  "lib": "lib/responsive-styles",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",
