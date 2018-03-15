@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import Image from "@times-components/image";
 import { Animations } from "@times-components/styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-proptypes";
