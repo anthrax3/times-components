@@ -2,7 +2,8 @@
   "name": "@times-components/article-image",
   "version": "0.12.4",
   "description": "Article Image",
-  "main": "article-image",
+  "main": "dist/article-image",
+  "dev": "src/article-image",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

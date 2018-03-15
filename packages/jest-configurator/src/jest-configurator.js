@@ -47,6 +47,7 @@ export default (
   coverageIgnoreGlobs: Array<string>
 ) => {
   const [local, global] = findNodeModules(cwd);
+  console.log(local, global);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
     cwd,

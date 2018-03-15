@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
+  target: "web",
   context: process.cwd(),
   entry: {
     vendor: ["prop-types", "react", "react-dom", "react-native-web"]

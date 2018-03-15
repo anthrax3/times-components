@@ -2,9 +2,9 @@ import React from "react";
 import { Text } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { fonts, colours, fontSizes } from "@times-components/styleguide";
-import ArticleByline from "./article-byline";
+import ArticleByline from "./src/article-byline";
 
-const authorsAST = require("./fixtures/authors.json");
+const authorsAST = require("./src/fixtures/authors.json");
 
 const bylineStyles = {
   fontSize: fontSizes.cardMeta,

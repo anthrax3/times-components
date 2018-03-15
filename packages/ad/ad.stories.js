@@ -4,12 +4,12 @@ import { Text, ScrollView, View } from "react-native";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react-native";
 import { fontSizes } from "@times-components/styleguide";
-import Ad, { AdComposer } from "./ad";
-import Placeholder from "./placeholder";
-import NativeDOMContext from "./dom-context";
-import WebDOMContext from "./dom-context.web";
-import pageTargeting from "./fixtures/page-options.json";
-import slotTargeting from "./fixtures/slot-options.json";
+import Ad, { AdComposer } from "./src/ad";
+import Placeholder from "./src/placeholder";
+import NativeDOMContext from "./src/dom-context";
+import WebDOMContext from "./src/dom-context.web";
+import pageTargeting from "./src/fixtures/page-options.json";
+import slotTargeting from "./src/fixtures/slot-options.json";
 
 const devNetworkId = "25436805";
 const adConfigBase = { networkId: devNetworkId, adUnit: "d.thetimes.co.uk" };

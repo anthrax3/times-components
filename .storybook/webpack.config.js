@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
+  target: "web",
   resolve: {
     // Maps the 'react-native' import to 'react-native-web'.
     alias: {
@@ -12,7 +13,7 @@ module.exports = {
     // module implementations should be written in files using the extension
     // `.web.js`.
     extensions: [".web.js", ".js", ".ios.js", ".android.js"],
-    mainFields: ["module", "main"]
+    mainFields: ["dev", "main"]
   },
 
   plugins: [
