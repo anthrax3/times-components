@@ -1,7 +1,8 @@
 {
   "name": "@times-components/card",
   "version": "0.21.1",
-  "main": "src/card",
+  "main": "lib/card",
+  "dev": "src/card",
   "dist": "dist/card.bundle.js",
   "scripts": {
     "bundle": "BABEL_ENV=bundle webpack",

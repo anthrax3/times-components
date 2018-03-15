@@ -1,4 +1,4 @@
-import { fonts } from "./styleguide";
+import { fonts } from "./src/styleguide";
 
 const styles = {
   display: {

@@ -2,7 +2,8 @@
   "name": "@times-components/gradient",
   "version": "0.6.0",
   "description": "Renders a gradient background",
-  "main": "src/gradient",
+  "main": "lib/gradient",
+  "dev": "src/gradient",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",

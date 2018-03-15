@@ -1,7 +1,8 @@
 {
   "name": "@times-components/image",
   "version": "1.14.1",
-  "main": "src/image",
+  "main": "lib/image",
+  "dev": "src/image",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",

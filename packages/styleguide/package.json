@@ -2,7 +2,8 @@
   "name": "@times-components/styleguide",
   "version": "0.4.0",
   "description": "Centralised library for common styles throughout the Times",
-  "main": "src/styleguide",
+  "main": "lib/styleguide",
+  "dev": "src/styleguide.js",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",

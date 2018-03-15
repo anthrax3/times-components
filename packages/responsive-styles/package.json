@@ -2,7 +2,8 @@
   "name": "@times-components/responsive-styles",
   "version": "0.4.2",
   "description": "Higher-order component to apply responsive styles to a component (web usage only)",
-  "main": "src/responsive-styles",
+  "main": "lib/responsive-styles",
+  "dev": "src/responsive-styles",
   "scripts": {
     "build": "babel src -d lib",
     "fmt": "prettier --write '**/*.*'",

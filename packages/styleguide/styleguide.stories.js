@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react-native";
 import styles from "./styleguide.stories.styles";
-import { Animations, colours, fonts } from "./styleguide";
+import { Animations, colours, fonts } from "./src/styleguide";
 
 const ColourBox = ({ name, hex }) => (
   <View style={styles.container}>
