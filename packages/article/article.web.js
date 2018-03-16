@@ -77,11 +77,11 @@ class ArticlePage extends React.Component {
           </View>
         </MainContainer>
         <SponsoredAdContainer key="sponsoredAd">
-          <Ad pos="article-sponsored-ad" style={adStyle} section={section} />
+          <Ad pos="article-sponsored-ad" style={adStyle} section={section} contextUrl={url} />
         </SponsoredAdContainer>
-        <Ad pos="pixel" section={section} />
-        <Ad pos="pixelteads" section={section} />
-        <Ad pos="pixelskin" section={section} />
+        <Ad pos="pixel" section={section} contextUrl={url} />
+        <Ad pos="pixelteads" section={section} contextUrl={url} />
+        <Ad pos="pixelskin" section={section} contextUrl={url} />
       </Fragment>
     );
   }
