@@ -2,8 +2,10 @@
   "name": "@times-components/watermark",
   "version": "0.4.3",
   "description": "Watermark",
-  "main": "watermark",
+  "main": "dist/watermark.js",
+  "dev": "src/watermark.js",
   "scripts": {
+    "postinstall": "babel src -d dist",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
