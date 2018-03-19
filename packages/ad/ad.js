@@ -40,14 +40,12 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    this.slotsForPrebid.map(slot =>
-      this.slots.push(
-        getPrebidSlotConfig(
-          slot,
-          "article",
-          this.windowWidth,
-          adConfig.biddersConfig.bidders
-        )
+    this.slots = this.slotsForPrebid.map(slot =>
+      getPrebidSlotConfig(
+        slot,
+        "article",
+        this.windowWidth,
+        adConfig.biddersConfig.bidders
       )
     );
 
