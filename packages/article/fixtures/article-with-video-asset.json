@@ -99,6 +99,10 @@
       ],
       "leadAsset": {
         "type": "Video",
+        "brightcoveVideoId": "5465738541001",
+        "brightcovePolicyKey": "BCpkADawqM1aWD_-83NlRi7xY2cwsWk0zxLzk18SH84DAmMRIM0WnCFEFElPsc0umP9vhIVZeeowi6nsYKA_ds8GAf2o9GOlwFHWcytRb9GmWtfFXlH9Ot9F-HRnAKLqKtSxnfp5pzAwM586",
+        "brightcoveAccountId": "5436121857001",
+        "paidonly": null,
         "posterImage": {
           "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
           "title": "",

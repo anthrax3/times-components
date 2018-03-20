@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
-
+import BrightcoveVideo from  "@times-components/brightcove-video";
 import ArticleError from "./article-error";
 import ArticleLoading from "./article-loading";
 import { articlePropTypes, articleDefaultProps } from "./article-proptype";
