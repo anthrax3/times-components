@@ -23,17 +23,12 @@ function renderLeadAsset(leadAsset) {
         height: 0,
         //overflow: "hidden",
         paddingBottom: `${100 /1.78 }%`,
-        display: "table"
-      },
-      placeholder: {
-        position: "absolute",
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-        zIndex: 0
-      },
-      img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
+        display: "table",
+        // From PrimaryImg, should go in responsive
+        width: "58.33%",
+        margin: "auto"
+      }//,
+     // img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
     };
 
   if (leadAsset) {
@@ -50,7 +45,7 @@ function renderLeadAsset(leadAsset) {
 
       // <div style={{border: "solid 2px red", position: "relative", paddingBottom: "56.25%"}}>
             //{/* <div style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "solid 2px blue"}}> */}
-   <div style={styles.wrapper}>
+      <div>
           <BrightcoveVideo
               width="100%"
               height="100%"
@@ -59,7 +54,7 @@ function renderLeadAsset(leadAsset) {
               accountId={leadAsset.accountId}
               poster={{ uri: posterImageURI }}
           />
-            </div>
+      </div>
       // </div>
     );
     // return (

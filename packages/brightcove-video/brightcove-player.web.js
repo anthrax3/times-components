@@ -219,14 +219,31 @@ class BrightcoveVideo extends Component {
     }
   }
 
+
+
   render() {
+
+    const styles = {
+      wrapper: {
+        height: 0,
+        //overflow: "hidden",
+        paddingBottom: `${100 /1.78 }%`,
+        display: "table",
+        // From PrimaryImg, should go in responsive
+        width: "58.33%",
+        margin: "auto"
+      }//,
+     // img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
+    };
+
     /* eslint jsx-a11y/media-has-caption: "off" */
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
-      <div style={{width: "100%", height: "100%", position: "absolute" }}>
+      // <div style={{width: "100%", height: "100%", position: "absolute" }}>
+      <div>
         <video
           id={this.state.id}
-          style={{ width: this.props.width, height: this.props.height }}
+          style={styles.wrapper}
           {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
           data-embed="default"
           data-video-id={this.props.videoId}
