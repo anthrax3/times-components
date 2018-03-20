@@ -45,7 +45,7 @@ function renderLeadAsset(leadAsset) {
 
       // <div style={{border: "solid 2px red", position: "relative", paddingBottom: "56.25%"}}>
             //{/* <div style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "solid 2px blue"}}> */}
-      <div>
+      <div style={{paddingBottom: `${100 /1.78 }%`}}>
           <BrightcoveVideo
               width="100%"
               height="100%"
