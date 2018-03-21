@@ -222,41 +222,26 @@ class BrightcoveVideo extends Component {
 
 
   render() {
-
-    const styles = {
-      wrapper: {
-        //height: 0,
-        //overflow: "hidden",
-        paddingBottom: `${100 /1.78 }%`,
-        //display: "table",
-        // From PrimaryImg, should go in responsive
-        //width: "58.33%",
-        //margin: "auto"
-      }//,
-     // img: { display: "block", width: "100%", zIndex: 1, position: "absolute" }
-    };
-
     /* eslint jsx-a11y/media-has-caption: "off" */
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
+        // This sets the width and height of the video
         <div style={{width: "100%", height: "100%", position: "absolute" }}>
-
-        <video
-          id={this.state.id}
-          //style={styles.wrapper}
-          style={{ width: this.props.width, height: this.props.height}}
-          {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
-          data-embed="default"
-          data-video-id={this.props.videoId}
-          data-account={this.props.accountId}
-          data-player={this.props.playerId}
-          // following 'autoplay' can not expected to always work on web
-          // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
-          autoPlay={this.props.autoplay}
-          data-application-id
-          className="video-js"
-          controls
-        />
+          <video
+            id={this.state.id}
+            style={{ width: this.props.width, height: this.props.height}}
+            {...(this.props.poster ? { poster: this.props.poster.uri } : {})}
+            data-embed="default"
+            data-video-id={this.props.videoId}
+            data-account={this.props.accountId}
+            data-player={this.props.playerId}
+            // following 'autoplay' can not expected to always work on web
+            // see: https://docs.brightcove.com/en/player/brightcove-player/guides/in-page-embed-player-implementation.html
+            autoPlay={this.props.autoplay}
+            data-application-id
+            className="video-js"
+            controls
+          />
         </div>
     );
   }
