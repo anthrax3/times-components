@@ -45,7 +45,7 @@ export const LinkStyle = withResponsiveStyles("a", {
 /* --- Lead Asset Styles --- */
 
 export const LeadAsset = withResponsiveStyles(View, {
-  base: () => "margin-bottom: 10px;",
+  base: () => "margin-bottom: 10px",
   mediumUp: () => "margin-bottom: 20px",
   wideUp: () => "width: 100%; margin: 0 auto;"
 });
@@ -57,6 +57,7 @@ export const LeadAssetDesktop = config.showHideToggle(
   false,
   `
   width: ${config.wideBpWidth};
+  background-color: green;
   margin: 0 auto;
   // Temp padding for feature flag release
   padding-bottom: 20px;
@@ -68,6 +69,8 @@ export const MediaContainerMobile = config.showHideToggle(View, true);
 export const MediaContainerDesktop = config.showHideToggle(View);
 
 /* --- Article Images --- */
+
+// exp/ort const PrimaryVideo = withResponsiveStyles
 
 export const PrimaryImg = withResponsiveStyles(View, {
   base: () => `

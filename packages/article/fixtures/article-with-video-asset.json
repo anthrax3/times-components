@@ -99,10 +99,10 @@
       ],
       "leadAsset": {
         "type": "Video",
-        "brightcoveVideoId": "5465738541001",
-        "brightcovePolicyKey": "BCpkADawqM1aWD_-83NlRi7xY2cwsWk0zxLzk18SH84DAmMRIM0WnCFEFElPsc0umP9vhIVZeeowi6nsYKA_ds8GAf2o9GOlwFHWcytRb9GmWtfFXlH9Ot9F-HRnAKLqKtSxnfp5pzAwM586",
-        "brightcoveAccountId": "5436121857001",
-        "paidonly": null,
+        "brightcoveVideoId": "4084164751001",
+        "brightcovePolicyKey": "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
+        "brightcoveAccountId": "57838016001",
+        "paidonly": "false",
         "posterImage": {
           "id": "2d09f6bb-9106-4f8b-d4bc-f371672bd460",
           "title": "",
@@ -110,8 +110,7 @@
           "caption": "",
           "crop": {
             "ratio": "16:9",
-            "url":
-              "//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+            "url": "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc"
           }
         }
       }
