@@ -17,29 +17,22 @@ function renderLeadAsset(leadAsset) {
   console.log('leadAsset isss', leadAsset);
   if (leadAsset) {
     if (leadAsset.type === 'Video') {
+      const brightcoveVideo = ( <BrightcoveVideo
+        width="100%"
+        height="100%"
+        policyKey={leadAsset.brightcovePolicyKey}
+        videoId={leadAsset.brightcoveVideoId}
+        accountId={leadAsset.brightcoveAccountId}
+        poster={{ uri: leadAsset.posterImage.crop.url }}
+      /> );
       return (
         <LeadAsset>
           <LeadAssetMobile key={`leadassetmob${leadAsset.posterImage.crop.url}`}>
-            <BrightcoveVideo
-                width="100%"
-                height="100%"
-                policyKey={leadAsset.brightcovePolicyKey}
-                videoId={leadAsset.brightcoveVideoId}
-                accountId={leadAsset.brightcoveAccountId}
-                poster={{ uri: leadAsset.posterImage.crop.url }}
-              />
+            {brightcoveVideo}
           </LeadAssetMobile>
           <LeadAssetDesktop key={`leadassetdesktop${leadAsset.posterImage.crop.url}`}>
-            <BrightcoveVideo
-                width="100%"
-                height="100%"
-                policyKey={leadAsset.brightcovePolicyKey}
-                videoId={leadAsset.brightcoveVideoId}
-                accountId={leadAsset.brightcoveAccountId}
-                poster={{ uri: leadAsset.posterImage.crop.url }}
-              />
+            {brightcoveVideo}
           </LeadAssetDesktop>
-
       </LeadAsset>
       );
     } else {
