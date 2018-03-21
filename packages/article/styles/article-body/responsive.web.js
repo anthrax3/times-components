@@ -52,8 +52,8 @@ export const LeadAsset = withResponsiveStyles(View, {
 
 export const LeadAssetVideo = withResponsiveStyles(View, {
   base: () => "margin-bottom: 10px",
-  mediumUp: () => "margin-bottom: 20px",
-  wideUp: () => "margin: 0 auto; padding-bottom: 56.17%"
+  //mediumUp: () => "margin-bottom: 20px",
+  mediumUp: () => "width: 100%; margin: 0 auto; padding-bottom: 56.17%"
 });
 
 export const LeadAssetVideoPrimary = withResponsiveStyles(View, {

@@ -239,8 +239,8 @@ class BrightcoveVideo extends Component {
     /* eslint jsx-a11y/media-has-caption: "off" */
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
-      // <div style={{width: "100%", height: "100%", position: "absolute" }}>
-       <div>
+        <div style={{width: "100%", height: "100%", position: "absolute" }}>
+
         <video
           id={this.state.id}
           //style={styles.wrapper}
@@ -257,7 +257,7 @@ class BrightcoveVideo extends Component {
           className="video-js"
           controls
         />
-       </div>
+        </div>
     );
   }
 }
