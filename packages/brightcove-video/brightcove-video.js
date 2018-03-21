@@ -103,7 +103,7 @@ class BrightcoveVideo extends Component {
 
     return (
       <TouchableWithoutFeedback onPress={this.play}>
-        <View style={{ width: this.props.width, height: this.props.height, position: "absolute" }}>
+        <View style={{ width: this.props.width, height: this.props.height, position: this.props.position }}>
           <Splash {...this.props} />
         </View>
       </TouchableWithoutFeedback>

@@ -21,6 +21,7 @@ function renderLeadAsset(leadAsset) {
       const brightcoveVideo =  <BrightcoveVideo
         width="100%"
         height="100%"
+        position="absolute"
         policyKey={leadAsset.brightcovePolicyKey}
         videoId={leadAsset.brightcoveVideoId}
         accountId={leadAsset.brightcoveAccountId}

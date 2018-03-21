@@ -226,7 +226,7 @@ class BrightcoveVideo extends Component {
     // Added a wrapping div as brightcove adds siblings to the video tag
     return (
         // This sets the width and height of the video
-        <div style={{width: "100%", height: "100%", position: "absolute" }}>
+        <div style={{width: this.props.width, height: this.props.height, position: this.props.position }}>
           <video
             id={this.state.id}
             style={{ width: this.props.width, height: this.props.height}}
