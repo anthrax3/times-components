@@ -9,7 +9,8 @@ import {
   MediaContainerMobile,
   LeadAssetMobile,
   LeadAssetDesktop,
-  PrimaryImg
+  LeadAssetVideo,
+  LeadAssetVideoPrimary
 } from "./styles/article-body/responsive";
 
 function renderLeadAsset(leadAsset) {
@@ -17,23 +18,20 @@ function renderLeadAsset(leadAsset) {
   console.log('leadAsset isss', leadAsset);
   if (leadAsset) {
     if (leadAsset.type === 'Video') {
-      const brightcoveVideo = ( <BrightcoveVideo
+      const brightcoveVideo =  <BrightcoveVideo
         width="100%"
         height="100%"
         policyKey={leadAsset.brightcovePolicyKey}
         videoId={leadAsset.brightcoveVideoId}
         accountId={leadAsset.brightcoveAccountId}
         poster={{ uri: leadAsset.posterImage.crop.url }}
-      /> );
+      /> ;
       return (
-        <LeadAsset>
-          <LeadAssetMobile key={`leadassetmob${leadAsset.posterImage.crop.url}`}>
+        <LeadAssetVideoPrimary>
+          <LeadAssetVideo data-testid="leadAeet">
             {brightcoveVideo}
-          </LeadAssetMobile>
-          <LeadAssetDesktop key={`leadassetdesktop${leadAsset.posterImage.crop.url}`}>
-            {brightcoveVideo}
-          </LeadAssetDesktop>
-      </LeadAsset>
+          </LeadAssetVideo>
+        </LeadAssetVideoPrimary>
       );
     } else {
       const [ratioWidth, ratioHeight] = leadAsset.crop.ratio.split(":");
