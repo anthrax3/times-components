@@ -12,6 +12,8 @@ import ArticleBody from "./article-body/article-body";
 import LeadAssetComponent from "./article-lead-asset.web";
 import articleTrackingContext from "./article-tracking-context";
 import getLeadAsset from "./get-lead-asset";
+import Topics from "./topics";
+import RelatedArticles from "./related-articles/related-articles";
 
 import {
   MainContainer,
@@ -37,9 +39,21 @@ class ArticlePage extends React.Component {
       publicationName,
       content,
       section,
-      url
+      url,
+      topics,
+      relatedArticles,
+      relatedArticlesLayout
     } = articleData;
     const leadAssetProps = getLeadAsset(articleData);
+    const displayRelatedArticles =
+      relatedArticlesLayout && relatedArticlesLayout.template ? (
+        <RelatedArticles
+          analyticsStream={() => {}}
+          articles={relatedArticles}
+          template={relatedArticlesLayout.template}
+          onPress={() => null}
+        />
+      ) : null;
 
     return (
       <Fragment>
@@ -64,6 +78,7 @@ class ArticlePage extends React.Component {
                 publishedTime={publishedTime}
                 publicationName={publicationName}
               />
+              <Topics topics={topics} device="DESKTOP" />
             </MetaContainer>
             <LeadAssetComponent device="DESKTOP" {...leadAssetProps} />
             <BodyContainer>
@@ -75,6 +90,8 @@ class ArticlePage extends React.Component {
             </BodyContainer>
           </View>
         </MainContainer>
+        <Topics topics={topics} />
+        {displayRelatedArticles}
         <Ad pos="pixel" section={section} contextUrl={url} />
         <Ad pos="pixelteads" section={section} contextUrl={url} />
         <Ad pos="pixelskin" section={section} contextUrl={url} />
@@ -120,4 +137,5 @@ ArticlePage.defaultProps = {
   error: null
 };
 
+export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);

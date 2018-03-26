@@ -6,13 +6,11 @@ import { getConfig, getConfigWrapper } from "./config";
 
 const StandardSlice = ({ itemCount, renderItems }) => {
   const ConfigWrapper = getConfigWrapper({ itemCount });
-
+  const config = getConfig({ itemCount });
   const ChildrenContainer = getChildrenContainer({
     childCount: itemCount
   });
-  const Separator = getSeparator({ hasLeftRightMargin: true });
-
-  const config = getConfig(itemCount);
+  const Separator = getSeparator({ hasLeftRightMargin: true, itemCount });
 
   return (
     <ConfigWrapper>

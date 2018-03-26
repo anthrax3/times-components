@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.11"></a>
+## [0.3.11](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.10...@times-components/icons@0.3.11) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/icons
+
+<a name="0.3.10"></a>
+## [0.3.10](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.9...@times-components/icons@0.3.10) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/icons
+
+<a name="0.3.9"></a>
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.8...@times-components/icons@0.3.9) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/icons
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.6...@times-components/icons@0.3.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/icons
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.6...@times-components/icons@0.3.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/icons
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/icons@0.3.5...@times-components/icons@0.3.6) (2018-03-16)
 

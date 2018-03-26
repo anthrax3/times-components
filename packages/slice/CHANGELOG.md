@@ -3,6 +3,90 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.16.1"></a>
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/slice@0.16.0...@times-components/slice@0.16.1) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.15.0...@times-components/slice@0.16.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.14.0...@times-components/slice@0.15.0) (2018-03-22)
+
+
+### Features
+
+* add comment/opinion and two template to Slice package ([#761](https://github.com/newsuk/times-components/issues/761)) ([18e125c](https://github.com/newsuk/times-components/commit/18e125c))
+
+
+
+
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.13.4...@times-components/slice@0.14.0) (2018-03-21)
+
+
+### Features
+
+* design review related articles ([#772](https://github.com/newsuk/times-components/issues/772)) ([9e2130a](https://github.com/newsuk/times-components/commit/9e2130a))
+
+
+
+
+<a name="0.13.4"></a>
+## [0.13.4](https://github.com/newsuk/times-components/compare/@times-components/slice@0.13.3...@times-components/slice@0.13.4) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.13.3"></a>
+## [0.13.3](https://github.com/newsuk/times-components/compare/@times-components/slice@0.13.1...@times-components/slice@0.13.3) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.13.2"></a>
+## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/slice@0.13.1...@times-components/slice@0.13.2) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.13.1"></a>
+## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/slice@0.13.0...@times-components/slice@0.13.1) (2018-03-19)
+
+
+
+
+**Note:** Version bump only for package @times-components/slice
+
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.12.0...@times-components/slice@0.13.0) (2018-03-19)
+
+
+### Features
+
+* slice ordering ([#756](https://github.com/newsuk/times-components/issues/756)) ([bcb91a6](https://github.com/newsuk/times-components/commit/bcb91a6))
+
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/slice@0.11.1...@times-components/slice@0.12.0) (2018-03-19)
 

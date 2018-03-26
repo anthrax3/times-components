@@ -1,5 +1,6 @@
 import { View } from "react-native";
 import withResponsiveStyles from "@times-components/responsive-styles";
+import { spacing } from "@times-components/styleguide";
 
 const summaryConfig = {
   1: [125],
@@ -7,7 +8,7 @@ const summaryConfig = {
   3: [125, 145]
 };
 
-export const getConfig = itemCount => ({
+export const getConfig = ({ itemCount }) => ({
   contentContainerClass: "contentContainerClass",
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",
@@ -32,16 +33,15 @@ export const getConfigWrapper = ({ itemCount }) => {
     `,
     mediumUp: () => {
       const singleItemImageStyle = `
-        flex: 2;
+        flex: 1;
         min-width: auto;
-        max-width: 328px;
-        padding-right: 15px;
+        padding-right: ${spacing(2)};
       `;
 
       const singleItemSummaryStyle = `
-        flex-grow: 2.7;
+        flex-grow: 1;
         flex-basis: 0 !important;
-        min-width: 325px;
+        min-width: 300px;
       `;
 
       return `

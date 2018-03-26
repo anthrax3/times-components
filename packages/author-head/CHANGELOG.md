@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.1"></a>
+## [0.22.1](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.22.0...@times-components/author-head@0.22.1) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.17...@times-components/author-head@0.22.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.21.17"></a>
+## [0.21.17](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.16...@times-components/author-head@0.21.17) (2018-03-22)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.16"></a>
+## [0.21.16](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.15...@times-components/author-head@0.21.16) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.15"></a>
+## [0.21.15](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.14...@times-components/author-head@0.21.15) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.14"></a>
+## [0.21.14](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.12...@times-components/author-head@0.21.14) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
+<a name="0.21.13"></a>
+## [0.21.13](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.12...@times-components/author-head@0.21.13) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/author-head
+
 <a name="0.21.12"></a>
 ## [0.21.12](https://github.com/newsuk/times-components/compare/@times-components/author-head@0.21.11...@times-components/author-head@0.21.12) (2018-03-19)
 

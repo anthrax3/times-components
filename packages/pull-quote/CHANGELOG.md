@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.4.0...@times-components/pull-quote@0.4.1) (2018-03-26)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.9...@times-components/pull-quote@0.4.0) (2018-03-26)
+
+
+### Features
+
+* Styleguide - Spacing ([#774](https://github.com/newsuk/times-components/issues/774)) ([5b22303](https://github.com/newsuk/times-components/commit/5b22303))
+
+
+
+
+<a name="0.3.9"></a>
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.8...@times-components/pull-quote@0.3.9) (2018-03-21)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.6...@times-components/pull-quote@0.3.8) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+<a name="0.3.7"></a>
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.6...@times-components/pull-quote@0.3.7) (2018-03-20)
+
+
+
+
+**Note:** Version bump only for package @times-components/pull-quote
+
 <a name="0.3.6"></a>
 ## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@0.3.5...@times-components/pull-quote@0.3.6) (2018-03-16)
 

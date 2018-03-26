@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
+import ModalImage from "@times-components/image/modal-image";
 import { AdComposer } from "@times-components/ad";
 
 import ArticleContent from "./article-content";
@@ -15,6 +15,7 @@ import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleRow from "./article-body/article-body-row";
 import RelatedArticles from "./related-articles/related-articles";
+import Topics from "./topics";
 
 import articleTrackingContext from "./article-tracking-context";
 
@@ -30,7 +31,7 @@ class ArticlePage extends React.Component {
         const aspectRatio = ratioWidth / ratioHeight;
         return (
           <View testID="leadAsset" key={rowData.type} style={styles.leadAsset}>
-            <Image uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
+            <ModalImage uri={rowData.data.crop.url} aspectRatio={aspectRatio} />
           </View>
         );
       }
@@ -76,6 +77,10 @@ class ArticlePage extends React.Component {
             onPress={onRelatedArticlePress}
           />
         );
+      }
+
+      case "topics": {
+        return <Topics topics={rowData.data.topics} />;
       }
 
       default: {
@@ -154,4 +159,5 @@ ArticlePage.defaultProps = {
   onRelatedArticlePress: () => {}
 };
 
+export { articlePropTypes, articleDefaultProps };
 export default articleTrackingContext(ArticlePage);

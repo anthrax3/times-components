@@ -1,7 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Image from "@times-components/image";
+import ModalImage from "@times-components/image/modal-image";
 import Caption from "@times-components/caption";
+import { spacing } from "@times-components/styleguide";
 
 import {
   articleImagePropTypes,
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
     width: "50%"
   },
   inlineCaption: {
-    paddingLeft: 10,
+    paddingLeft: spacing(2),
     paddingTop: 0,
     width: "50%"
   },
@@ -49,7 +50,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
 
   return [
     <View key="img" style={styles.inlineImage}>
-      <Image uri={url} aspectRatio={aspectRatio} />
+      <ModalImage uri={url} aspectRatio={aspectRatio} />
     </View>,
     ...imgCaption
   ];

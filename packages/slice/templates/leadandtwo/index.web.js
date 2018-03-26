@@ -9,11 +9,9 @@ import {
 } from "./responsive";
 import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
 
-const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
+const LeadAndTwoSlice = ({ lead, renderSupports }) => {
   const supportConfig = getSupportConfig();
-  const supports = [support1(supportConfig), support2(supportConfig)].filter(
-    support => support !== null
-  );
+  const supports = renderSupports(supportConfig);
   const supportCount = supports.length;
   const itemCount = supportCount + 1;
   const hasSupports = supportCount > 0;
@@ -23,9 +21,19 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
     hasSupports,
     supportCount
   });
-  const Separator = getSeparator({ hasLeftRightMargin: false });
+  const leadConfig = getLeadConfig({ itemCount });
+  const Separator = getSeparator({ hasLeftRightMargin: false, itemCount: 0 });
 
-  const leadConfig = getLeadConfig(itemCount);
+  const renderSupportsContainer = () => (
+    <SupportsContainer>
+      {supports.map((support, index) => {
+        const SupportContainer = getSupportContainer({ index });
+        return (
+          <SupportContainer key={support.props.id}>{support}</SupportContainer>
+        );
+      })}
+    </SupportsContainer>
+  );
 
   return (
     <ConfigWrapper>
@@ -33,19 +41,7 @@ const LeadAndTwoSlice = ({ lead, support1, support2 }) => {
         <Container>
           <LeadContainer>{lead(leadConfig)}</LeadContainer>
           {hasSupports && <Separator />}
-          {hasSupports && (
-            <SupportsContainer>
-              {supports.map((support, index) => {
-                const SupportContainer = getSupportContainer({ index });
-                SupportContainer.displayName = "SupportContainer";
-                return (
-                  <SupportContainer key={support.props.id}>
-                    {support}
-                  </SupportContainer>
-                );
-              })}
-            </SupportsContainer>
-          )}
+          {hasSupports && renderSupportsContainer()}
         </Container>
       </SliceContainer>
     </ConfigWrapper>
