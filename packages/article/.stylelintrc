@@ -1,0 +1,9 @@
+{
+  "processors": [
+    "./processor.js"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ]
+}

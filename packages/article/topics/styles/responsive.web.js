@@ -5,7 +5,7 @@ import config from "../../styles/responsive-config";
 export const TopicsContainer = withResponsiveStyles(View, {
   base: () => config.articleContainerPadding,
   mediumUp: () => config.mediumBpPositioning,
-  wideUp: () => `display: none`
+  wideUp: () => `display: none;`
 });
 
 export const TopicsMetaContainer = withResponsiveStyles(View, {
