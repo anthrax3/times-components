@@ -149,6 +149,12 @@ storiesOf("Pages/Article", module)
   .add("Error", () => (
     <RenderArticle error={{ message: "An example error." }} />
   ))
+  .add("Interactive component", () => (
+    <div>
+      <link rel="import" href="//components.timesdev.tools/lib2/times-qwiz-rounds-1.0.0/times-qwiz-rounds.html" />
+      <times-qwiz-rounds deck-id="5761"></times-qwiz-rounds>
+    </div>
+  ))
   .add("With Provider", () => (
     <MockedProvider mocks={mocks}>
       <ArticleProvider
