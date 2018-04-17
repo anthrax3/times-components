@@ -3,7 +3,7 @@ xcrun simctl boot 'iPhone 7'
 ./node_modules/.bin/lerna run dextrose-clean
 ./node_modules/.bin/lerna run dextrose-stories --since
 npm run fetch-fonts
-./node_modules/.bin/rnstl --searchDir ./packages --pattern '**/*/*.stories!(.web).dextrose.tmp.js' --outputFile ./fructose/components.js
+./node_modules/.bin/rnscl --searchDir ./packages --pattern '**/*/*.showcase!(.web).js' --outputFile ./fructose/components.js
 ./node_modules/.bin/react-native bundle --platform ios --dev false --reset-cache --entry-file fructose/index.js --bundle-output ios/main.jsbundle
 mkdir -p ios/build/Build/Products/Release-iphonesimulator/storybooknative.app/
 ./node_modules/.bin/react-native run-ios --no-packager --configuration Release
