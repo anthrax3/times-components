@@ -12,6 +12,7 @@ export default {
     {
       type: "story",
       name: "Article Label",
+      test: function () { return " please no"},
       component: ({ select }) => (
         <ArticleLabel
           title="swimming"

@@ -4079,14 +4079,15 @@ detox@5.8.2:
     telnet-client "0.15.3"
     ws "^1.1.1"
 
-dextrose@1.7.6:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-1.7.6.tgz#0743dc6d42079a4eaf81e72bdb87f759cc3a1ad2"
+dextrose@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dextrose/-/dextrose-2.0.0.tgz#92f1794e0d4f910ae230165e310a39e61213daed"
   dependencies:
     aws-sdk "^2.179.0"
     babel-core "6.26.0"
     babel-preset-react-native "4.0.0"
     commander " 2.12.1"
+    js-object-pretty-print "^0.3.0"
     nock "^9.1.9"
     npmlog "4.1.2"
     pug "^2.0.0-rc.4"
@@ -7243,6 +7244,10 @@ jpeg-js@^0.2.0:
 js-base64@^2.1.9:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.3.tgz#2e545ec2b0f2957f41356510205214e98fad6582"
+
+js-object-pretty-print@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/js-object-pretty-print/-/js-object-pretty-print-0.3.0.tgz#4670e450066ee1eccf35174c7d197f5aa38bcf74"
 
 js-stringify@^1.0.1:
   version "1.0.2"

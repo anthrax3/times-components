@@ -1,0 +1,1 @@
+var _shared=require("../shared");var _shared2=_interopRequireDefault(_shared);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}describe("Article Label test on web",function(){(0,_shared2.default)();});

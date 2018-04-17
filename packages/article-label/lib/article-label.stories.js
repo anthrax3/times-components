@@ -1,0 +1,1 @@
+var _storybook=require("@times-components/storybook");var _articleLabel=require("./article-label.showcase");var _articleLabel2=_interopRequireDefault(_articleLabel);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_storybook.showcaseConverter)(module,_articleLabel2.default);
