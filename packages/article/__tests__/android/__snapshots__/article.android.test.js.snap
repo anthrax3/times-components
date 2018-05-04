@@ -3706,7 +3706,7 @@ exports[`Article tests on android should render a smaller article 1`] = `
           }
         }
       >
-        <Topics
+        <ArticleTopics
           topics={
             Array [
               Object {
